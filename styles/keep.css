@@ -1,0 +1,21 @@
+/* custom.css */
+
+/* header is draggable... */
+header {
+  -webkit-app-region: drag;
+}
+
+/* but any buttons inside the header shouldn't be draggable */
+header button {
+  -webkit-app-region: no-drag;
+}
+
+/* perhaps move some items out of way for the traffic light */
+/*
+header {
+  padding-top: 10px;
+}
+*/
+header div:first-child {
+  margin-left: 30px;
+}
